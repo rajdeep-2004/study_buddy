@@ -1,15 +1,27 @@
 
+import Dashboard from "./pages/Dashboard";
 import LandingPage from "./pages/LandingPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignUpPage from "./pages/SignUpPage";
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path:"/signup",
+    element: <SignUpPage/>
+  },
+  {
+    path:"/dashboard",
+    element: <Dashboard/>
+  }
+]);
 
 function App() {
-  return (
-      <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<LandingPage/>}></Route>
-          </Routes>
-    </BrowserRouter>
-  )
+    return <RouterProvider router={router} />;
 }
 
 export default App
