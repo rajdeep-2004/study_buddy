@@ -1,0 +1,9 @@
+.cta:hover{
+    background: white;
+    border: 2px solid rgb(176,221,255);
+    transition: 0.1s ease-in;
+
+}
+.cta{
+    background-color: rgb(176, 221, 255);
+}
