@@ -1,10 +1,5 @@
 import "../../styles.css"
-import "./Navbar.css"
-
-
 const Navbar = () => {
-  const signIn = false;
-
 
   return (
     <>
@@ -16,19 +11,12 @@ const Navbar = () => {
                 <span><img src="src/assets/Logo.png" alt="Logo" class="h-15 w-15 p-2"/></span>
                 <span className="ml-2 font-semibold text-xl text-gray-800 ">Study Buddy</span>
             </li>
-            <div className=" hehe flex justify-between w-200">
+            <div className=" hehe flex justify-end-safe gap-10 w-200">
                 <li className="nav-links flex items-center ml-2 pt-0.9 font-light hover:text-[rgb(118,195,255)]  hover:cursor-pointer hover:font-semibold">Home</li>
                 <li className="nav-links flex items-center ml-2 pt-0.9 font-light hover:text-[rgb(118,195,255)] hover:cursor-pointer hover:font-semibold">Features</li>
                 <li className="nav-links flex items-center ml-2 pt-0.9 font-light hover:text-[rgb(118,195,255)] hover:cursor-pointer hover:font-semibold">Testimonials</li>
                 <li className="nav-links flex items-center ml-2 pt-0.9 font-light hover:text-[rgb(118,195,255)] hover:cursor-pointer hover:font-semibold">Contact Us</li>
             </div>
-            
-
-            <li className="flex items-center ml-4">
-            <button className="cta text-black px-4 py-2 rounded-lg font-semibold hover:bg-none">
-                {signIn ? "" : "Sign Up"}
-            </button>
-            </li>
 
 
         </ul>
